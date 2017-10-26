@@ -5,7 +5,9 @@
 				<div class="widget-body welcome-box tabular">
 					<div class="tabular-row">
 						<div class="tabular-cell welcome-avatar">
-							<a href="#"><img src="<c:url value="/assets/demo/avatar/avatar_02.png" />" class="avatar"></a>
+							<a href="#"><img
+								src="<c:url value="/assets/demo/avatar/avatar_02.png" />"
+								class="avatar"></a>
 						</div>
 						<div class="tabular-cell welcome-options">
 							<span class="welcome-text">Welcome,</span> <a href="#"
@@ -99,6 +101,43 @@
 								<li><a href="ui-carousel.html">Carousel</a></li>
 								<li><a href="ui-wells.html">Wells</a></li>
 							</ul></li>
+
+
+						<li class="nav-separator">Admin</li>
+				<li><a href="javascript:;"><i class="fa fa-shopping-cart"></i><span>Language</span></a>
+							<ul class="acc-menu">
+								<li><a href="javascript:;">Type</a>
+									<ul class="acc-menu">
+										<li><a href="${contextPath}/admin/lang/new">New Type</a></li>
+										<li><a href="${contextPath}/admin/lang/list">List Types</a></li>
+									</ul></li>
+									
+									<li><a href="javascript:;">Chapter</a>
+									<ul class="acc-menu">
+										<li><a href="${contextPath}/admin/chapt/new">New Chapter</a></li>
+										<li><a href="${contextPath}/admin/chapt/list">List Chapters</a></li>
+									</ul></li>
+									
+									<li><a href="javascript:;">Section</a>
+									<ul class="acc-menu">
+										<li><a href="${contextPath}/admin/sect/new">New Section</a></li>
+										<li><a href="${contextPath}/admin/sect/list">List Sections</a></li>
+									</ul></li>
+									
+									<li><a href="javascript:;">Sub Section</a>
+									<ul class="acc-menu">
+										<li><a href="${contextPath}/admin/subsect/new">New Sub Section</a></li>
+										<li><a href="${contextPath}/admin/subsect/list">List Sub Sections</a></li>
+									</ul></li>
+									
+									<li><a href="javascript:;">Word</a>
+									<ul class="acc-menu">
+										<li><a href="${contextPath}/admin/word/new">New Word</a></li>
+										<li><a href="${contextPath}/admin/word/list">List Words</a></li>
+									</ul></li>
+							</ul>
+							</li>
+
 
 						<li class="nav-separator">Plugins</li>
 						<li><a href="javascript:;"><i class="fa fa-random"></i><span>Components</span></a>

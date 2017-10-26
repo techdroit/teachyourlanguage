@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Language Word</title>
+<title>Language Type</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -85,7 +85,7 @@
 
 						</ol>
 						<div class="page-heading">
-							<h1>List of Words</h1>
+							<h1>List of Languages</h1>
 							<div class="options">
 								<div class="btn-toolbar">
 									<a href="#" class="btn btn-default"><i
@@ -94,62 +94,10 @@
 							</div>
 						</div>
 						<div class="container-fluid">
-							
-							<%--
-							<div class="row">
-								<div class="col-sm-12">
-									<a href="${contextPath}/admin/" class="btn btn-default">New</a>
-								</div>
-							</div>
-							 --%>
-
 							<div class="row">
 								<div class="col-md-12">
-
 									<form action="" class="form-horizontal row-border">
-										<div class="form-group">
-											<div class="col-sm-2">
-												<select class="form-control" placeholder="">
-													<option>Select Language</option>
-													<option></option>
-													<option></option>
-													<option></option>
-												</select>
-											</div>
-
-											<div class="col-sm-2">
-												<select class="form-control" placeholder="">
-													<option>Select Chapter</option>
-													<option></option>
-													<option></option>
-													<option></option>
-												</select>
-											</div>
-
-											<div class="col-sm-3">
-												<select class="form-control" placeholder="">
-													<option>Select Section</option>
-													<option></option>
-													<option></option>
-													<option></option>
-												</select>
-											</div>
-
-											<div class="col-sm-3">
-												<select class="form-control" placeholder="">
-													<option>Select Sub Section</option>
-													<option></option>
-													<option></option>
-													<option></option>
-												</select>
-											</div>
-
-											<div class="col-sm-1">
-												<button type="submit" class="btn btn-primary">
-													<span class="fa fa-search"></span> Search
-												</button>
-											</div>
-										</div>
+										
 									</form>
 								</div>
 							</div>
@@ -157,24 +105,19 @@
 								<div class="col-md-12">
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<a href="${contextPath}/admin/word/new" class="btn btn-default">
-											<span class="fa fa-plus"></span> New Word
+											<a href="${contextPath}/admin/lang/new" class="btn btn-default">
+											<span class="fa fa-plus"></span> New Language
 											</a>
 											<div class="panel-ctrls"></div>
 										</div>
 										<div class="panel-body panel-no-padding">
 											<table id="example"
-												class="table table-striped table-bordered" cellspacing="0"
-												width="100%">
+												class="table table-striped table-bordered" cellspacing="0" width="100%">
 												<thead>
 													<tr>
-														<th>Id</th>
-														<th>English General</th>
-														<th>English Masculine</th>
-														<th>English Feminine</th>
-														<th>Translation General</th>
-														<th>Translation Masculine</th>
-														<th>Translation Feminine</th>
+														<th>Language Id</th>
+														<th>Language Title</th>
+														<th>Language Desc</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -182,19 +125,11 @@
 														<td>Trident</td>
 														<td>Internet Explorer 4.0</td>
 														<td>Win 95+</td>
-														<td>Trident</td>
-														<td>Trident</td>
-														<td class="center">4</td>
-														<td class="center">X</td>
 													</tr>
 													<tr class="even gradeC">
 														<td>Trident</td>
 														<td>Internet Explorer 5.0</td>
 														<td>Win 95+</td>
-														<td>Trident</td>
-														<td>Trident</td>
-														<td class="center">5</td>
-														<td class="center">C</td>
 													</tr>
 												</tbody>
 											</table>

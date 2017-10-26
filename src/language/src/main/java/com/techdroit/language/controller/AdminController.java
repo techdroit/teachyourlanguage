@@ -17,10 +17,22 @@ public class AdminController {
 		return "admin-lang-types/admin-new-lang";
 	}
 	
+	@RequestMapping(value= {"/admin/lang/list"}, method=RequestMethod.GET)
+	public String newLanguageTypeList(ModelMap model, HttpServletRequest request) {
+		
+		return "admin-lang-types/admin-lang-list";
+	}
+	
 	@RequestMapping(value= {"/admin/chapt/new"}, method=RequestMethod.GET)
 	public String newLanguageChapter(ModelMap model, HttpServletRequest request) {
 		
 		return "admin-lang-chapt/admin-new-chapt";
+	}
+	
+	@RequestMapping(value= {"/admin/chapt/list"}, method=RequestMethod.GET)
+	public String newLanguageChapterList(ModelMap model, HttpServletRequest request) {
+		
+		return "admin-lang-chapt/admin-chapt-list";
 	}
 	
 	@RequestMapping(value= {"/admin/sect/new"}, method=RequestMethod.GET)
@@ -29,10 +41,24 @@ public class AdminController {
 		return "admin-lang-sect/admin-new-sect";
 	}
 	
+	@RequestMapping(value= {"/admin/sect/list"}, method=RequestMethod.GET)
+	public String newLanguageSectionList(ModelMap model, HttpServletRequest request) {
+		
+		
+		return "admin-lang-sect/admin-sect-list";
+	}
+	
 	@RequestMapping(value= {"/admin/subsect/new"}, method=RequestMethod.GET)
 	public String newLanguageSubSection(ModelMap model, HttpServletRequest request) {
 		
 		return "admin-lang-subsect/admin-new-subsect";
+	}
+	
+	@RequestMapping(value= {"/admin/subsect/list"}, method=RequestMethod.GET)
+	public String newLanguageSubSectionList(ModelMap model, HttpServletRequest request) {	
+		
+		
+		return "admin-lang-subsect/admin-subsect-list";
 	}
 	
 	@RequestMapping(value= {"/admin/word/new"}, method=RequestMethod.GET)
@@ -45,19 +71,5 @@ public class AdminController {
 	public String wordList(ModelMap model, HttpServletRequest request) {
 		
 		return "admin-lang-word/admin-word-list";
-	}
-	
-	@RequestMapping(value= {"admin/x"}, method=RequestMethod.GET)
-	public String index(ModelMap model, HttpServletRequest request) {
-		
-		model.addAttribute("message", "This is some test message");
-		
-		return "index";
-	}
-	
-	@RequestMapping(value= {"/demo/page"}, method=RequestMethod.GET)
-	public String demoPage(ModelMap model, HttpServletRequest request) {
-		
-		return "demo";
 	}
 }
